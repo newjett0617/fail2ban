@@ -1,0 +1,9 @@
+[sshd]
+enabled = true
+chain = INPUT
+port = ssh
+filter = sshd[mode=aggressive]
+logpath = /var/log/auth.log
+bantime = 604800
+findtime = 86400
+maxretry = 3
